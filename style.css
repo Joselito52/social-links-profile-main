@@ -1,24 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 :root{
     --White: hsl(0, 0%, 100%);
     --Grey: hsl(0, 0%, 20%);
     --DarkGrey: hsl(0, 0%, 12%);
     --OffBlack: hsl(0, 0%, 8%);
+    --inter: 'Inter', sans-serif;
 }
 body{
     color: var(--White);
     background-color: var(--OffBlack);
     margin-top: 50px;
+     font-family: var(--inter);
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
+    width: 470px;
     height:800px ;
     margin: auto;
     background-color: var(--DarkGrey);
@@ -28,17 +34,29 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 figure{
-    margin: 50px 0;
+    margin: 40px 0;
     
 }
 img{
     width: 120px;
     border-radius: 100px;
 }
-button{
-    font-weight: bolder;
+h1 h2{
+    font-weight: 400;
+}
+p{
+    color: #94da13;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 20px 0;
+}
+ul li a{
+    color: var(--White);
+    font-weight: 700;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,4 +65,9 @@ button{
     height: 65px;
     margin-top: 20px;
     border-radius: 10px;
+    background-color: var(--Grey);
+}
+ul li a:hover{
+    background-color: #94da13;
+    color: var(--OffBlack);
 }
